@@ -98,7 +98,7 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
 # data_url = "https://raw.githubusercontent.com/mcnakhaee/palmerpenguins/master/palmerpenguins/data/penguins.csv"
 
 # df = pd.read_csv(data_url)
-df = pd.read_csv("C:/Users/Admin/Downloads/final_training_file.tsv" ,  sep='\t', engine="pyarrow")
+df = pd.read_csv("final_training_file.tsv" ,  sep='\t', engine="pyarrow")
 #df.rename(columns = {'karaka Relation':'karakarelation'}, inplace = True)
 #print(df.columns)
 #df['karakarelation'] = df.karakarelation.astype('category')
@@ -142,7 +142,7 @@ def aggrid_interactive_table(df: pd.DataFrame):
 
 
 okk1 = pd.read_csv(
-    "C:/Users/Admin/Downloads/send_id.csv", engine="pyarrow")
+    "send_id.csv", engine="pyarrow")
 
 id_sen_dict  = okk1.set_index('sent_id').to_dict()['sentence']
 #df1=filter_dataframe(df)
