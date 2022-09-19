@@ -98,7 +98,7 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
 # data_url = "https://raw.githubusercontent.com/mcnakhaee/palmerpenguins/master/palmerpenguins/data/penguins.csv"
 
 # df = pd.read_csv(data_url)
-df = pd.read_csv("sliced_final_file.tsv" ,  sep='\t', engine="pyarrow")
+df = pd.read_csv("final_final_file.tsv" ,  sep='\t', engine="pyarrow")
 #df.rename(columns = {'karaka Relation':'karakarelation'}, inplace = True)
 #print(df.columns)
 #df['karakarelation'] = df.karakarelation.astype('category')
