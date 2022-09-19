@@ -98,7 +98,14 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
 # data_url = "https://raw.githubusercontent.com/mcnakhaee/palmerpenguins/master/palmerpenguins/data/penguins.csv"
 
 # df = pd.read_csv(data_url)
-df = pd.read_csv("final_final_file.tsv" ,  sep='\t', engine="pyarrow")
+#df = pd.read_csv("final_final_file.tsv" ,  sep='\t', engine="pyarrow")
+df1=pd.read_csv("0 sliced_final_file.tsv" ,  sep='\t', engine="pyarrow")
+df2=pd.read_csv("1 sliced_final_file.tsv" ,  sep='\t', engine="pyarrow")
+df3=pd.read_csv("2 sliced_final_file.tsv" ,  sep='\t', engine="pyarrow")
+df4=pd.read_csv("3 sliced_final_file.tsv" ,  sep='\t', engine="pyarrow")
+df5=pd.read_csv("4 sliced_final_file.tsv" ,  sep='\t', engine="pyarrow")
+df6=pd.read_csv("5 sliced_final_file.tsv" ,  sep='\t', engine="pyarrow")
+df = pd.concat([df1,df2,df3,df4,df5,df6]) 
 #df.rename(columns = {'karaka Relation':'karakarelation'}, inplace = True)
 #print(df.columns)
 #df['karakarelation'] = df.karakarelation.astype('category')
